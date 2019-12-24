@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>First Example</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header-top bg-info text-white py-3">
+        <div class="container">
+          <div class="row">
+            <h1 class="h3 col-md-3">
+              Total users: <span id="total-users"></span>
+            </h1>
+            <div class="filter-box col-md-6">
+              <input
+                type="text"
+                name="filter"
+                id="filter"
+                class="form-control"
+              />
+            </div>
+            <div class="offset-md-1 col-md-2">
+              <button
+                data-action="update-cache"
+                class="btn btn-warning action-user"
+              >
+                Update cache
+              </button>
+              <button data-action="undo" class="btn btn-warning action-user">
+                Undo
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <table class="table" id="users-table">
+          <thead>
+            <tr>
+              <th>N</th>
+              <th>Name</th>
+              <th>username</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Daniil</td>
+              <td>Krutogolov</td>
+              <td>delete</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
